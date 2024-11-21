@@ -1,0 +1,135 @@
+{
+	"textures": [
+		{
+			"image": "nov24furn-0.webp",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1931,
+				"h": 1620
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "nov24furn1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 124,
+						"y": 83,
+						"w": 1284,
+						"h": 810
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 1284,
+						"h": 810
+					}
+				},
+				{
+					"filename": "nov24furnback",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 437,
+						"y": 76,
+						"w": 647,
+						"h": 809
+					},
+					"frame": {
+						"x": 1284,
+						"y": 0,
+						"w": 647,
+						"h": 809
+					}
+				},
+				{
+					"filename": "nov24furncover",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 441,
+						"y": 82,
+						"w": 647,
+						"h": 809
+					},
+					"frame": {
+						"x": 1284,
+						"y": 809,
+						"w": 647,
+						"h": 809
+					}
+				},
+				{
+					"filename": "nov24furn2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 124,
+						"y": 83,
+						"w": 1284,
+						"h": 810
+					},
+					"frame": {
+						"x": 0,
+						"y": 810,
+						"w": 1284,
+						"h": 810
+					}
+				}
+			]
+		},
+		{
+			"image": "nov24furn-1.webp",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1284,
+				"h": 810
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "nov24furn3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 124,
+						"y": 83,
+						"w": 1284,
+						"h": 810
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 1284,
+						"h": 810
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7"
+	}
+}

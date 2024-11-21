@@ -1,0 +1,62 @@
+{
+    "section1": {
+        "files": [
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/apr24furniture.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "apr24furniture"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/aug24furn.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "aug24furn"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/june24furniture.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "june24furniture"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/march24furn.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "march24furn"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/may24furn.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "may24furn"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/oct24furn.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "oct24furn"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/furniture/nov24furn.json",
+                "path": "assets/media/interface/game/furniture",
+                "key": "nov24furn"
+            },
+            {
+                "url": [
+                    "assets/media/sounds/secret_furn.mp3"
+                ],
+                "type": "audio",
+                "key": "secret_furn"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

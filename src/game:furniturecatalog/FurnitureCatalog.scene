@@ -1,0 +1,3961 @@
+{
+    "id": "921bfb5b-f19b-4ff6-8fe8-e285d5932992",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/static/assets/media/interface/game/furniture/furniture-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "FurnitureCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "ba08f8d0-f784-4ddf-8911-4b203f7576f4",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "originX": 0,
+            "originY": 0,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "18e9fb21-bfff-490d-b392-3ab535734fbb",
+            "label": "pg1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8d01893b-8aea-4e84-9135-2dafd5a18848",
+                    "label": "pg_1",
+                    "texture": {
+                        "key": "nov24furn",
+                        "frame": "nov24furncover"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "5adca164-e2cd-4378-b6db-ff4251d58949",
+                    "label": "x_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "x",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "x"
+                    },
+                    "x": 1000,
+                    "y": 199
+                },
+                {
+                    "type": "Image",
+                    "id": "1fdce805-6bad-4020-ac11-9d50c95c141e",
+                    "label": "flip_43",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage2Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1001,
+                    "y": 747,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "00bac573-335d-4788-9d5d-fb4931a15eea",
+            "label": "pg2",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "35344227-9783-4efa-b5d0-eb204024815a",
+                    "label": "pg_2",
+                    "texture": {
+                        "key": "nov24furn",
+                        "frame": "nov24furn1"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Container",
+                    "id": "1828ed6e-35e2-454e-9752-7801a3df0582",
+                    "label": "buy_3",
+                    "x": 312,
+                    "y": 386,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "25ffd5f5-ca75-4320-b1f9-40796c04e89c",
+                            "label": "buy3w",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2258) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1720319c-08d5-43cb-9fb7-db20351e76ff",
+                            "label": "text3w",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2258,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "81a466b8-37fc-4973-8b7f-5c467b10fd93",
+                            "label": "coin3w",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "7e9163db-5fc8-4af8-8313-cbbece945406",
+                    "label": "buy_6",
+                    "x": 613,
+                    "y": 548,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "828be3ac-4edd-4f09-a3c0-ecba0eca1e88",
+                            "label": "buy3u",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2255) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "05656d4e-e1d7-42ef-9276-d1ca65bb50d1",
+                            "label": "text3u",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2255,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "20ec7843-7c85-4171-87ee-50492add3bc2",
+                            "label": "coin3u",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "e40d6f06-38b1-4df1-9f2d-7ab09e27e945",
+                    "label": "buy_11",
+                    "x": 613,
+                    "y": 752,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ac6e0916-5b8a-4420-916e-1e00ac0efbe8",
+                            "label": "buy3s",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2249) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "244f68e9-025d-45ab-85a9-681b3d01b7e6",
+                            "label": "text3s",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2249,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "29db0d52-dd10-4294-b835-7280eeb58faa",
+                            "label": "coin3s",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "e9c5ad9b-27d4-410a-b40d-62b594aba8f1",
+                    "label": "buy_12",
+                    "x": 312,
+                    "y": 725,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9fb0f306-824b-4a53-a8ab-3d02f81df311",
+                            "label": "buy3r",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2261) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "707434ba-fffb-45c3-84f5-51a86d4ca753",
+                            "label": "text3r",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2261,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6f700b26-ffb0-40ed-8d47-d43379c0f4ad",
+                            "label": "coin3r",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "f8f6bbda-b0a4-438f-96f0-3cf603463385",
+                    "label": "buy_13",
+                    "x": 952,
+                    "y": 741,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "2290347f-b3a7-4720-9496-7db8c2961e92",
+                            "label": "buy3q",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2251) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "72ad37a6-d690-4ad7-b94b-2e73ab46d05c",
+                            "label": "text3q",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2251,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4e643aba-46cd-4608-9730-387f7f5c7edd",
+                            "label": "coin3q",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "33f6cae8-140c-4fd9-a620-177fcbd7933f",
+                    "label": "buy_15",
+                    "x": 952,
+                    "y": 451,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a6c2b398-62e3-4d40-a04b-0b42dcea710b",
+                            "label": "buy3p",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2253) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "aafaa452-ba32-46ff-8e3b-faa5fde002c5",
+                            "label": "text3p",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2253,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9b71800c-4b76-45da-ac71-2e002386f506",
+                            "label": "coin3p",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "4266d057-24a4-4ebc-b853-347c5921e27c",
+                    "label": "buy_16",
+                    "x": 1290,
+                    "y": 546,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3e3321d1-fbbe-4f96-92a5-8d7efca979bf",
+                            "label": "buy3o",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2259) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "69c1b6e2-b8e4-45b2-8cbb-935c343307a4",
+                            "label": "text3o",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2259,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c2db3c57-7efa-4163-8fbf-4f6a2ad4e83e",
+                            "label": "coin3o",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "83c49718-7c21-4040-b2db-88a610c651b7",
+                    "label": "buy_17",
+                    "x": 1290,
+                    "y": 375,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "76112d9a-22c5-44b7-8983-2c43a616a976",
+                            "label": "buy3n",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2254) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "efc27dfa-3677-4452-9aee-38f913fbf802",
+                            "label": "text3n",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2254,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4d8af101-9a7d-45b6-84a8-24a684ecbdca",
+                            "label": "coin3n",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "9517124a-3552-4a63-a526-038588dc15b7",
+                    "label": "buy_14",
+                    "x": 1290,
+                    "y": 749,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "15b2ceac-6b6d-483b-8b3f-ed9f40ed12c3",
+                            "label": "buy3",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2250) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "05c8ffa0-d1c6-4df2-9bf5-0609118b826f",
+                            "label": "text3",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2250,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6f11b0c0-1dbf-45de-a2aa-741cfd495f5c",
+                            "label": "coin3",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "99dae9f7-25fd-4ade-b608-af03fca2abba",
+                    "label": "secret151",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2260); }",
+                    "x": 272,
+                    "y": 322,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "8786692f-32b3-4d25-aa37-6349eed13631",
+                    "label": "secret46",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2257); }",
+                    "x": 935,
+                    "y": 265,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ca2f48d4-1116-45bc-acdb-827106b487a6",
+                    "label": "secret155",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2262); }",
+                    "x": 657,
+                    "y": 329,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "1019dd58-9b4a-46fd-ab46-807dcd4d9e11",
+                    "label": "secret_12",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2248); }",
+                    "x": 630,
+                    "y": 689,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "bb7043e9-936b-4ff2-a1ea-df1e633bcd2c",
+                    "label": "secret_13",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2252); }",
+                    "x": 1152,
+                    "y": 266,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d701e10d-8d3d-40af-9607-dac7028928ec",
+                    "label": "secret_14",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2256); }",
+                    "x": 1062,
+                    "y": 136,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Image",
+                    "id": "e494c470-844d-448c-ad18-02de18e13caa",
+                    "label": "flip_pg1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage1Click()",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.x": -1,
+                    "hitArea.y": 80,
+                    "hitArea.width": 40.027088941856135,
+                    "hitArea.height": 139.86789178617656,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "5f139981-16b3-4a0d-9d3b-e93f2c912fab",
+                    "label": "flip_pg3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage3Click()",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.x": 87,
+                    "hitArea.y": 82,
+                    "hitArea.width": 44.389376013518785,
+                    "hitArea.height": 136.34480218551664,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1347.6190813181531,
+                    "y": 791.9063490952642,
+                    "originX": 0.7278390870627163,
+                    "originY": 0.7031961497523267,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "8ac17e3f-b915-452f-82ad-a5ca549d1a97",
+            "label": "pg3",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "3f8186a7-9e47-456b-9859-451c99d1af4c",
+                    "label": "pg_3",
+                    "texture": {
+                        "key": "nov24furn",
+                        "frame": "nov24furn2"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Container",
+                    "id": "b6901b31-8d8d-47e7-b1e7-f52f52c938cd",
+                    "label": "buy_21",
+                    "x": 1239,
+                    "y": 453,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a512ec7e-ee78-4e60-9f7d-9337eb57a3d6",
+                            "label": "buy3k",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(254) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "14b44a9b-aa72-4593-be1d-a1a2ba77cd21",
+                            "label": "text3k",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 254,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7cda7e9c-5cbf-40da-be2f-4f74dbaadbc7",
+                            "label": "coin3k",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "4a5eccc6-de09-4ff0-bf82-92b8b3c22509",
+                    "label": "buy_23",
+                    "x": 966,
+                    "y": 453,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "862903e9-7de7-4b28-8c45-8e5483e14325",
+                            "label": "buy3j",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(168) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "64db3c46-61cc-4ec7-a108-ff3f9f636621",
+                            "label": "text3j",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 168,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "911d1abc-9c5c-491d-90b8-aeb41b06a17d",
+                            "label": "coin3j",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "ac54ce76-7481-4d7c-a7a6-f79bf614b063",
+                    "label": "buy_26",
+                    "x": 615,
+                    "y": 748,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "c52fcba8-ae11-40a0-bc86-fbe345bdccbd",
+                            "label": "buy3h",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(606) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "ed065b89-06ac-4f97-b2b6-4b60f965f009",
+                            "label": "text3h",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 606,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f5f63b23-68e3-4ae9-8f6e-a3a0fdccbba4",
+                            "label": "coin3h",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 29,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "1e34bf21-f9ae-4c20-98ba-087112c80773",
+                    "label": "buy_27",
+                    "x": 315,
+                    "y": 748,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9b633d97-fe83-48b8-8c8d-d567cf18cda5",
+                            "label": "buy3g",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(347) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "9aa054e8-f1dc-4e67-af07-42c7b1320648",
+                            "label": "text3g",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 347,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "09bc1639-90ab-406e-995d-43edce22b534",
+                            "label": "coin3g",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "d3a0f78c-b531-4e1d-88d9-693c51acb9d2",
+                    "label": "buy_29",
+                    "x": 615,
+                    "y": 350,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3b4e093b-df12-487e-a01d-2fa1e17a2191",
+                            "label": "buy3e",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(351) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "b2223eaa-b642-4c5b-855b-393f84f2d427",
+                            "label": "text3e",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 351,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d3168154-c12e-4d0d-9bd3-02f04ca067d5",
+                            "label": "coin3e",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "f82d1b6a-4a8e-4a7c-9857-5cb0c3b96ecd",
+                    "label": "buy_30",
+                    "x": 1272,
+                    "y": 672,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a109dfcf-3a4c-4364-b7e1-370bf0099a76",
+                            "label": "buy3d",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(580) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -20,
+                            "y": 7,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "ed5e3762-1885-4b92-8714-3abbe5ce474d",
+                            "label": "text3d",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 580,
+                            "x": -50,
+                            "y": -7,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "52cc013c-3405-40fc-88f7-db895c37732a",
+                            "label": "coin3d",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 25,
+                            "y": 7,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "a33da86a-360c-446e-beba-4cfd9b4a9b6f",
+                    "label": "secret_15",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(253); }",
+                    "x": 1223,
+                    "y": 422,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "adcba9e1-8194-43e1-ae8b-92cdb0513ba1",
+                    "label": "secret_16",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(583); }",
+                    "x": 946,
+                    "y": 362,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d1324893-7d1a-467c-9e15-0b8f8c8b65c5",
+                    "label": "secret_17",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(584); }",
+                    "x": 673,
+                    "y": 654,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "acf99b26-190e-41e3-abd3-b6910f8f25f0",
+                    "label": "secret_18",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(581); }",
+                    "x": 852,
+                    "y": 741,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Image",
+                    "id": "6ea295fb-b0c5-4ad8-9e6c-64b374f324cf",
+                    "label": "flip_pg2_back",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage2_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "8dfb1a65-aa0f-460f-adfb-149f8f579ca2",
+                    "label": "flip_pg4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage4Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "02c2be47-5d38-4e74-9a07-ceabf0ee09fd",
+            "label": "pg4",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "a1c8cafe-968c-4073-bc73-5344cb2a812d",
+                    "label": "pg_4",
+                    "texture": {
+                        "key": "nov24furn",
+                        "frame": "nov24furn3"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Container",
+                    "id": "f4ccb3c0-9e65-4311-85f3-e2e487dc4afa",
+                    "label": "buy_25",
+                    "x": 1250,
+                    "y": 460,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9ed95acd-4f57-491a-b87c-54813ffae4b7",
+                            "label": "buy3a",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(687) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "abd9fe21-aae8-4490-95bd-0a4143c714d2",
+                            "label": "text3a",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 687,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "87a38c9d-bfa6-470c-b276-62bb454d1759",
+                            "label": "coin3a",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "4db8154a-daf1-4b95-825d-d55fedfcc042",
+                    "label": "buy_31",
+                    "x": 950,
+                    "y": 460,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ae5eb24b-a061-44ac-ab6e-f3ff0da8936f",
+                            "label": "buy39",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(344) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f784359a-0f9b-46ea-bbe2-ca8b1db3d67f",
+                            "label": "text39",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 344,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "10578f92-48a6-4727-8c5b-0c72461ce9b9",
+                            "label": "coin39",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "d0913c7b-d281-462a-b154-8634aaadcf21",
+                    "label": "buy_33",
+                    "x": 310,
+                    "y": 680,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "4d1507c1-6e4a-423b-b995-fc2001778bb0",
+                            "label": "buy37",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(154) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "cd8631a9-3993-4a2f-a290-55bf54aec7fe",
+                            "label": "text37",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 154,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "29fd2fe8-34d5-463a-9666-ceb11016b339",
+                            "label": "coin37",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "debe0532-c653-45cb-9bdf-56b15a6edeed",
+                    "label": "buy_34",
+                    "x": 610,
+                    "y": 760,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "e1bfbb54-4647-4819-bc28-f60a3d317bdb",
+                            "label": "buy36",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(653) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1ea696cd-3c0e-4cd8-86f5-117baf3b34a6",
+                            "label": "text36",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 653,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "be16bb5c-2057-4ecb-909d-f5c9830b5c1a",
+                            "label": "coin36",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "acf0981b-3b52-4495-8e12-585a306fa786",
+                    "label": "buy_36",
+                    "x": 610,
+                    "y": 430,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "d56539b3-e7a1-4aa1-ba42-77eccde5740f",
+                            "label": "buy34",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(650) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "ce81d0ed-fb8e-419d-9451-a88c0ed7d7ea",
+                            "label": "text34",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 650,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7cd843ae-cb92-4aba-8133-fe86484ff4b7",
+                            "label": "coin34",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "e7a487ac-80dc-4838-bbe1-8f129b791dd5",
+                    "label": "buy_39",
+                    "x": 1265,
+                    "y": 700,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "b8a953aa-88e2-4836-a29b-e8b931f80844",
+                            "label": "buy31",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(315) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -17,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "878bdad6-c116-4031-8257-e038e6cb8cb4",
+                            "label": "text31",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 315,
+                            "x": -47,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "19597ab8-674c-428a-af3d-665cd7c71f5c",
+                            "label": "coin31",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 28,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "6c2c20aa-5b41-41ae-8ccc-c1d9e485e975",
+                    "label": "flip_pg3_back",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage3_1Click()",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.x": -2,
+                    "hitArea.y": 60,
+                    "hitArea.width": 41.6895678602503,
+                    "hitArea.height": 161.2100526426651,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "e7806f39-7a8b-4921-896c-b529dc20f2f2",
+                    "label": "flip_pg5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage5Click()",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.x": 90,
+                    "hitArea.y": 96,
+                    "hitArea.width": 38.63527097042599,
+                    "hitArea.height": 118.90492689392983,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "dace3258-a7b8-43fb-a4fc-e5936482ed00",
+                    "label": "secret_21",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(651); }",
+                    "x": 623,
+                    "y": 387,
+                    "scaleX": 0.2,
+                    "scaleY": 0.2,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "33e4b040-4784-4113-bb73-ddb6833e33bb",
+            "label": "pg5",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "dcada467-8e2c-4325-903d-7ea6d435398a",
+                    "label": "pg_6",
+                    "texture": {
+                        "key": "oct24furn",
+                        "frame": "oct24furn1"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Container",
+                    "id": "4bf45611-2502-4a7a-ae80-127cf78cfe10",
+                    "label": "container_2",
+                    "x": 1201,
+                    "y": 749,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "8b6fb430-d798-4a6c-b3ea-ea9d4fbf7b42",
+                            "label": "buy_9",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(988) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "fe5b0b40-097d-4d1d-848f-6237e9e45a1f",
+                            "label": "coin_8",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c50c794f-cbf5-4060-a149-f3a1e0d1b394",
+                            "label": "text_9",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 988,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "b86cf087-83ff-46f5-bb56-f21da9ba9f7b",
+                    "label": "container",
+                    "x": 1259,
+                    "y": 327,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1f034627-1b56-4580-8280-a06090e551ab",
+                            "label": "buy_9dwada",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(986) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4782ebd7-1b0f-4277-96c8-4a437495f0c0",
+                            "label": "coin_8dawDAW",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "8b53029c-a1d8-4108-8a5b-75302e54b435",
+                            "label": "text_9dwadwadwadd",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 989,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "20f062c3-3a58-43aa-a8b2-16d6319e50df",
+                    "label": "buy_809",
+                    "x": 1259,
+                    "y": 531,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "128ef263-ce21-4636-b7f3-1580acdf7b09",
+                            "label": "buy_4",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(579) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "b6693074-b3ba-41af-a569-035daec40184",
+                            "label": "text_4",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 579,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e5a7efde-7efd-41de-9d16-3209348e1b68",
+                            "label": "coin_3",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "e5b268c4-a4c6-401b-84e2-c5719b8f31c4",
+                    "label": "container_4",
+                    "x": 950,
+                    "y": 532,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "92ccbfc1-5b2c-45c8-84a7-cd7099beb60d",
+                            "label": "buy771",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2087) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "644e4a8e-4ddc-4d7b-b82d-cd8db5943af9",
+                            "label": "text_771",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2087,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f1140fb5-fe9f-4ae8-8ee6-c1d816b33e9f",
+                            "label": "coin_771",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "6c348048-d611-49d9-8269-b35be208adcf",
+                    "label": "buy_808",
+                    "x": 993,
+                    "y": 339,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "87af452b-5f0c-4a9f-a5f6-9359d56f3e95",
+                            "label": "buy2149",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(643) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -13.200676616845726,
+                            "y": -2.4264408776705864
+                        },
+                        {
+                            "type": "Text",
+                            "id": "bc3914b2-3001-4363-94ea-2a38e3233df1",
+                            "label": "text770",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 643,
+                            "x": -40.200676616845726,
+                            "y": -16.426440877670586,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1b27586b-5331-4ec0-abf6-c13a49e12a63",
+                            "label": "coin770",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 31.799323383154274,
+                            "y": -1.4264408776705864,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "52941508-fe6d-45ea-89b5-996098633446",
+                    "label": "buy_812",
+                    "x": 664,
+                    "y": 759,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "dee2cc05-02b4-4a19-bea8-5016903dc06a",
+                            "label": "buy658",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2122) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -10,
+                            "y": -4
+                        },
+                        {
+                            "type": "Text",
+                            "id": "5995cbb0-4751-4c27-833b-b9b9fb595c8e",
+                            "label": "text908",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2122,
+                            "x": -36,
+                            "y": -19,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "466e02e9-abf6-4990-8ad3-7abcde3c5eca",
+                            "label": "coin908",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 36,
+                            "y": -4,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "a8284331-06e9-458d-b3fc-29a9dcf2bd98",
+                    "label": "buy_807",
+                    "x": 329,
+                    "y": 742,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9148fbc3-039e-419f-a43f-5396af473218",
+                            "label": "buy2090",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2119) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d76f093c-b77a-4782-8293-f4b2de49ff8b",
+                            "label": "text2090",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2119,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "af20c254-a7ae-4473-a60f-9dbe64c63024",
+                            "label": "coin2090",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 73,
+                            "y": 16,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "9ec8cc6d-066e-43ed-a2cc-61716c0e990d",
+                    "label": "buy_811",
+                    "x": 329,
+                    "y": 534,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "3cf2af2d-12dd-4f8b-bef1-89bef5f4f747",
+                            "label": "buy929",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2120) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "74537f64-094f-43bc-960b-206715f3fe37",
+                            "label": "text929",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2120,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4c6eddb9-4976-437a-b917-16a8f5b8424a",
+                            "label": "coin2089",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "0a2f1557-200b-4641-9256-feb6b70ba011",
+                    "label": "container_3",
+                    "x": 573,
+                    "y": 535,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "8edd021f-c99a-4cbc-a1e8-d18c8ac13795",
+                            "label": "buy813",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2121) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 27,
+                            "y": 14
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3ee79c3f-0e43-4aef-b3e5-4be9d7954d24",
+                            "label": "text813",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2121,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b7ff85bf-e50d-44ad-b52f-6359071dfeb0",
+                            "label": "coin813",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 14,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "3f57a012-49ed-4685-9fe5-d5079307e519",
+                    "label": "buy_813",
+                    "x": 329,
+                    "y": 325,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "e8e2ac31-d719-4885-b072-008286044a0a",
+                            "label": "buy_7",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2092) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 28,
+                            "y": 13
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d2ca9620-e830-4d05-94e0-82134130f1ed",
+                            "label": "text_7",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2092,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6f616709-4034-41d9-9694-070ae7c9b518",
+                            "label": "coin_4",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 72,
+                            "y": 13,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "de6a127b-9495-4c9e-8b40-9f7a912efc2f",
+                    "label": "secret2151",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(450); }",
+                    "x": 926,
+                    "y": 732,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "adc63227-d47b-4b35-a8ac-8d139c39d5cf",
+                    "label": "secret2167",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(681); }",
+                    "x": 1163,
+                    "y": 521,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 32,
+                    "height": 32
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "a01049f4-464e-464d-ba39-be63f1dee951",
+                    "label": "secret",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(644); }",
+                    "x": 228,
+                    "y": 302,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 40,
+                    "height": 40
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "8b10b185-0de4-4e0e-97ae-9ab260d4056c",
+                    "label": "secret_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(913); }",
+                    "x": 227,
+                    "y": 482,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "418992f4-bf78-46cf-8acd-488be73ace26",
+                    "label": "secret_3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(768); }",
+                    "x": 499,
+                    "y": 720,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 45,
+                    "height": 40
+                },
+                {
+                    "type": "Image",
+                    "id": "c3ce5ab1-06b8-4a5a-b51a-8cc553a322b0",
+                    "label": "flip_pg4_back",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage4_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "3f9607a6-66fb-4b15-a5e6-96f5580783f3",
+                    "label": "flip_pg6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage6Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "be77fc8e-09d0-442f-a93c-fe3328f27e69",
+                    "label": "secret_25",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(914); }",
+                    "x": 365,
+                    "y": 703,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 45,
+                    "height": 40
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "9768ca12-862d-4515-a2a0-5fc728b0ec9c",
+                    "label": "secret_26",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(903); }",
+                    "x": 846,
+                    "y": 473,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 45,
+                    "height": 40
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b63cb70f-50e7-41f5-b57b-84c1ec64e7f5",
+                    "label": "secret_27",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(772); }",
+                    "x": 870,
+                    "y": 282,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 45,
+                    "height": 40
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "669d5801-c083-40d3-9183-428f307c6eea",
+                    "label": "secret_28",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2295); }",
+                    "x": 441,
+                    "y": 142,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 45,
+                    "height": 40
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "36d1e9a0-8117-447d-ad5c-cc90285ca97f",
+            "label": "pg6",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "bba835cb-aa1f-4e9c-83b1-a710f8c1b30f",
+                    "label": "oct24furn2",
+                    "texture": {
+                        "key": "oct24furn",
+                        "frame": "oct24furn2"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Container",
+                    "id": "a58bd15f-ffb9-4e12-8361-9bd49cab655e",
+                    "label": "buy_359",
+                    "x": 244,
+                    "y": 538,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "6688b568-71e7-4ed7-abc5-c2f48615ad6b",
+                            "label": "buy586",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(647) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 33.799323383154274,
+                            "y": 14.573559122329414
+                        },
+                        {
+                            "type": "Text",
+                            "id": "cd27c24f-d14f-4265-bf8f-3b0b807822b1",
+                            "label": "text_586",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 647,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "208fcff2-63fc-4260-842f-d93d5a4d689d",
+                            "label": "coin_586",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 81.79932338315427,
+                            "y": 14.573559122329414,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "7e80be96-c7d6-4b97-9e41-c3bbce9ebe78",
+                    "label": "buy_67",
+                    "x": 943,
+                    "y": 538,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "5c429522-4454-4686-a706-a1dbcbcc6e09",
+                            "label": "buy_1DWADWAdAW",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(116) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 34,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ab47ae39-1fac-40be-9316-bc754a182342",
+                            "label": "coin_1ddsdsdsa",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "26537fb0-0a16-4886-9c50-a65939cf3192",
+                            "label": "text_2dddsawdsa",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 116,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "a94e5d4e-0c97-4480-96cc-060f13c667ba",
+                    "label": "buy_393",
+                    "x": 946,
+                    "y": 740,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "f0420098-c861-4f96-8fb0-1c5420e5588e",
+                            "label": "buy587",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(113) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 34,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f27e6123-5d2c-4d0b-9a54-c3efdc3c8dae",
+                            "label": "text587",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 113,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8de1023d-6d49-4bdc-9ea1-443a1e3610a1",
+                            "label": "coin587",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "6d0dd608-03df-41ba-9e63-2dd374d5a71c",
+                    "label": "buy_394",
+                    "x": 1230,
+                    "y": 340,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "60ac2a74-f741-4fe0-aa9e-b1a6c30d7b82",
+                            "label": "buy588",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(765) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -9.200676616845726,
+                            "y": 3.5735591223294136
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3b3c2234-ad42-483a-b83d-20789246f9ce",
+                            "label": "text_588",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 765,
+                            "x": -43,
+                            "y": -11,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c4bb99d2-ad6b-4a86-9e6d-991f4eb14973",
+                            "label": "coin_588",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 38.799323383154274,
+                            "y": 3.5735591223294136,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "cd637780-318b-4a82-88bc-1f1ace6e691d",
+                    "label": "container_5",
+                    "x": 349,
+                    "y": 753,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "aec70a6f-5334-4809-942a-9080b7154bb2",
+                            "label": "buy_2dwadwad",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(115) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 3.630565756287183,
+                            "y": 0.24339080454893747
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ac54f77e-863f-4432-a80f-b10ddd430d61",
+                            "label": "coin_2dwadwad",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 48.63056575628718,
+                            "y": 0.24339080454893747,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "819c0237-4a08-4384-b7ac-4a3ece07a42b",
+                            "label": "text_3dddaw",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 115,
+                            "x": -30.168750649962817,
+                            "y": -14.330156558732313,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "b5aaf715-15a8-4599-b659-17ee0489ac33",
+                    "label": "buy_65",
+                    "x": 621,
+                    "y": 740,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1135f807-d34a-4a2e-84da-1f2307e8296b",
+                            "label": "buy2124",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(111) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 34,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7e3d3249-650e-40a5-a0e1-acb0653b38af",
+                            "label": "text2124",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 111,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "080dd931-9285-497c-be54-53ab7a37a03c",
+                            "label": "coin2124",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "4c66bad1-b257-4a24-89fe-87914b45e526",
+                    "label": "buy_360",
+                    "x": 610,
+                    "y": 330,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1e481c13-49db-4a25-ac19-8dcefe07d00f",
+                            "label": "buy800",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2113) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 33,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "72ec92a0-d1b7-4bf1-8e76-71515ed9fa98",
+                            "label": "text2117",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2113,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c5635467-1d98-4364-9550-2b8d10668235",
+                            "label": "coin2117",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "7172121f-c3ee-443e-974a-87453ce85613",
+                    "label": "container_6",
+                    "x": 311,
+                    "y": 330,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "5a517fa9-03e4-42a9-a185-5016c211e86c",
+                            "label": "buy2115",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(112) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 34,
+                            "y": 15
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7f3e581c-f9ad-4d8a-b1ea-32a7854388b0",
+                            "label": "text2115",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 112,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6282eafc-a10e-4b2c-9407-620b55cff2eb",
+                            "label": "coin2115",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "98f402de-bedc-4496-b8c1-7236bf31d44f",
+                    "label": "secret926",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2114); }",
+                    "x": 228,
+                    "y": 293,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 40,
+                    "height": 40
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d3b83700-421d-4102-b470-87e622414974",
+                    "label": "secret_5",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(907);}",
+                    "x": 511,
+                    "y": 274,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "4a31ace1-34b3-4f15-aeb9-7bc6916ef011",
+                    "label": "secret_6",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(773);}",
+                    "x": 1092,
+                    "y": 516,
+                    "scaleX": 0.2,
+                    "scaleY": 0.2,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "fb345a79-63f3-42ad-a755-3c70f85214f7",
+                    "label": "secret_7",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(913);}",
+                    "x": 498,
+                    "y": 717,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "1b7a8382-181b-4b72-aa3b-d58712e7d30f",
+                    "label": "secret_4",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(120); }",
+                    "x": 1138,
+                    "y": 734,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Container",
+                    "id": "c39db569-b610-4422-9141-3b174484c3c3",
+                    "label": "buy_40",
+                    "x": 1247,
+                    "y": 740,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9b2f1c87-5cd1-4aed-8d1a-b41d953d0408",
+                            "label": "buy_1dwdwads",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(766) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 34,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9fa6103b-2f8d-4a86-b9a2-011e26724735",
+                            "label": "coin_1ddddawssss",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "add90fcd-4813-4afc-b431-9ca011f5ffed",
+                            "label": "text_2ddddds",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 766,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "5066c0f1-e3c0-4607-bb9a-6c5b5cdd4876",
+                    "label": "buy_41",
+                    "x": 1250,
+                    "y": 538,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "77bd3887-b840-4ca9-9f0a-afbf72b43505",
+                            "label": "buy_1ddwasawdsaaa",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(646) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 34,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "50978e21-bcdb-4047-9891-a9cddf4daa41",
+                            "label": "coin_1aaaaa",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 79,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c43d1596-e976-44e1-ac33-30f1853b8678",
+                            "label": "text_2aaaaa",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 646,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "368d37fa-4928-4018-95a3-63890b9eb796",
+                    "label": "flip_pg5_back",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage5_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "1b5ee44c-8417-47d1-921e-4c1a40b70508",
+                    "label": "flip_pg7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage7Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "54e52632-47ff-458f-91ff-8bcd18c67919",
+                    "label": "secret_29",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2290); }",
+                    "x": 1181,
+                    "y": 680,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "6a0221f9-1f45-4267-8015-cfc1e3a4a811",
+                    "label": "secret_30",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(902); }",
+                    "x": 584,
+                    "y": 506,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "351ece3e-aeba-4052-974b-3ca7a046b82f",
+            "label": "pg7",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "61a613eb-f037-4143-9c62-ec86db74f952",
+                    "label": "pg",
+                    "texture": {
+                        "key": "oct24furn",
+                        "frame": "oct24furn3"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "cf24c5be-83ae-4abd-9001-8c03f1856a78",
+                    "label": "secret_10",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(966); }",
+                    "x": 221,
+                    "y": 629,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Container",
+                    "id": "b47d461d-298d-4f5f-b8a3-b5594670c64f",
+                    "label": "buy_80",
+                    "x": 1230,
+                    "y": 737,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "0a6ad5ac-fe05-47c0-8f93-94e32a9a1565",
+                            "label": "buy55",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(455) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -266,
+                            "y": 26
+                        },
+                        {
+                            "type": "Text",
+                            "id": "edea026b-68b3-4cf3-8384-0ae21213a038",
+                            "label": "text55",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 455,
+                            "x": -291,
+                            "y": 11,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d81d35cd-32ff-4d1a-998d-c089d132bc52",
+                            "label": "coin55",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": -220,
+                            "y": 26,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "a0007517-3d6c-41a0-be2b-928efe16142d",
+                    "label": "buy_78",
+                    "x": 649,
+                    "y": 779,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "078c5bc7-6a18-4854-a69f-680c2e98a74e",
+                            "label": "buy378w",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(764) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -3,
+                            "y": -20
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c8275509-14eb-4c12-943a-7a0478b20453",
+                            "label": "text_378w",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 764,
+                            "x": -29,
+                            "y": -33,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9170c8bc-7260-4e15-bcad-7059c19b784e",
+                            "label": "coin_378w",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 44,
+                            "y": -20,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "cea4bc31-4f5f-42b8-b194-20f7a55e1f74",
+                    "label": "container_1",
+                    "x": 324,
+                    "y": 747,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "5085a44b-77a5-4161-934b-b1d56a227e8b",
+                            "label": "buy_8",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(119) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": 26,
+                            "y": 15
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b6254409-4cb7-4085-b963-075b61050abe",
+                            "label": "coin_7",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 71,
+                            "y": 15,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        },
+                        {
+                            "type": "Text",
+                            "id": "eb091bc2-afcb-4acc-9848-b76845dd9285",
+                            "label": "text_8",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 119,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "ee6974d2-89c9-4203-9697-7cf85790b694",
+                    "label": "buy_101",
+                    "x": 657,
+                    "y": 553,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ed3bb68a-a4a2-49cf-85d6-837cb92f2677",
+                            "label": "buy230",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(452) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -8,
+                            "y": -3
+                        },
+                        {
+                            "type": "Text",
+                            "id": "181a0435-e62c-4df8-8a25-086fac4d74dd",
+                            "label": "text_230",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 452,
+                            "x": -34,
+                            "y": -17,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "22d6d591-d8fc-40bb-991f-38dbc97c4789",
+                            "label": "coin_230",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 40,
+                            "y": -3,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "1e753d06-8012-4195-b442-512bcff676e7",
+                    "label": "buy_213",
+                    "x": 357,
+                    "y": 554,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a103e306-da21-4fa7-abb3-d12651780d1c",
+                            "label": "buy661",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(454) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -10,
+                            "y": -4
+                        },
+                        {
+                            "type": "Text",
+                            "id": "4ced6e86-5259-4fc6-8700-e5907fcb5b32",
+                            "label": "text_661",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 454,
+                            "x": -36,
+                            "y": -18,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "2b19e849-474e-48f1-9d17-ea1d9dce6a18",
+                            "label": "coin_661",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 38,
+                            "y": -4,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "96c745c3-d5d3-4d40-8829-b6a7d3dc5f0a",
+                    "label": "buy",
+                    "x": 939,
+                    "y": 584,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a25d7dcc-05f3-4382-b76f-230eec3e187e",
+                            "label": "buy378ww",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(654) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -3,
+                            "y": -20
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1f84a523-815b-48db-9073-4f04b9f13452",
+                            "label": "text_378ww",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 654,
+                            "x": -29,
+                            "y": -33,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "dcd3e0df-fbdb-417c-b8a5-4cb4a18d4211",
+                            "label": "coin_378ww",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 44,
+                            "y": -20,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "3832b30f-0020-4856-8fd2-6851bc229d0b",
+                    "label": "buy_42",
+                    "x": 594,
+                    "y": 358,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "99c1bd7d-3808-4966-a6a7-054e012d6f49",
+                            "label": "buy378d",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2095) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -3,
+                            "y": -20
+                        },
+                        {
+                            "type": "Text",
+                            "id": "396e4ad7-83bd-46a3-8dc6-e13dfc13e778",
+                            "label": "text_378d",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2095,
+                            "x": -29,
+                            "y": -33,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7d290e53-64a5-4053-89b4-64f0c0ef8bf4",
+                            "label": "coin_378d",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 44,
+                            "y": -20,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "fa1d39ea-8fef-4455-b4fb-91dd50851c23",
+                    "label": "buy_43",
+                    "x": 1289,
+                    "y": 358,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "6a4eb645-81e3-4fb0-adc4-19efec7fe296",
+                            "label": "buy378dd",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2085) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -3,
+                            "y": -20
+                        },
+                        {
+                            "type": "Text",
+                            "id": "3ab1f9fe-b8c1-4192-b85b-713990c8bff8",
+                            "label": "text_378dd",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2085,
+                            "x": -29,
+                            "y": -33,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8da8ce71-886d-438f-99fd-6a1139c01358",
+                            "label": "coin_378dd",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 44,
+                            "y": -20,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "c480fc21-2f19-4266-8c34-5e657c4a62ab",
+                    "label": "buy_44",
+                    "x": 1289,
+                    "y": 569,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "91abe00b-b4cc-4e93-8d80-a8d469216e1b",
+                            "label": "buy378",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(370) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -3,
+                            "y": -20
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f35c7e2c-4a36-408d-a4ef-b1f76c18ce0f",
+                            "label": "text_378",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 370,
+                            "x": -29,
+                            "y": -33,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f319fff4-ac99-46ec-bd56-25e15d97f525",
+                            "label": "coin_378",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 44,
+                            "y": -20,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "14f4daba-0640-4456-bcc0-d013535f4b34",
+                    "label": "buy_45",
+                    "x": 1288,
+                    "y": 777,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ca30ed9c-6da3-421b-b059-21dafbf5bef4",
+                            "label": "buy378ddd",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "buy",
+                            "Button.callback": "() => { this.interface.prompt.showFurniture(2103) }",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "buy"
+                            },
+                            "x": -3,
+                            "y": -20
+                        },
+                        {
+                            "type": "Text",
+                            "id": "cffd29fa-ab61-46f9-b63d-1092b7806397",
+                            "label": "text_378ddd",
+                            "components": [
+                                "FurnitureBuy"
+                            ],
+                            "FurnitureBuy.id": 2103,
+                            "x": -29,
+                            "y": -33,
+                            "text": "0",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "fontStyle": "bold",
+                            "color": "#683200"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "35a0bbcf-3de5-4004-b875-831fc80f9866",
+                            "label": "coin_378ddd",
+                            "texture": {
+                                "key": "catalogs",
+                                "frame": "coin"
+                            },
+                            "x": 44,
+                            "y": -20,
+                            "scaleX": 0.9,
+                            "scaleY": 0.9
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "ef2372f4-e330-456a-9b32-02e507f77201",
+                    "label": "flip_pg6_back",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage6_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "d5d949c2-cc4a-4075-9009-640748cdb198",
+                    "label": "flip_pg8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage8Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ee5a4bd1-e40a-4030-a1fe-4364c29239f6",
+                    "label": "secret_2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2106); }",
+                    "x": 524,
+                    "y": 689,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "0c51f11d-824b-4668-be0a-16aa251e39c7",
+                    "label": "secret_8",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(453); }",
+                    "x": 234,
+                    "y": 450,
+                    "scaleX": 0.15,
+                    "scaleY": 0.15,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "3244a7a4-cb9e-4743-8805-bcf7c69d1ee9",
+                    "label": "secret_9",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(908); }",
+                    "x": 930,
+                    "y": 267,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 64,
+                    "height": 64
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "f2e615d3-7e2b-42b5-a4c9-6b6786aff0d5",
+                    "label": "secret_11",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(2296); }",
+                    "x": 419,
+                    "y": 270,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "e0574cae-b890-4eb2-a26d-2780694223f5",
+                    "label": "secret_23",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(947); }",
+                    "x": 1154,
+                    "y": 513,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 50,
+                    "height": 50
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c0c15d38-d53e-46f5-be19-72ae68ed3e93",
+                    "label": "secret_24",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretFurniture(911); }",
+                    "x": 1169,
+                    "y": 304,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 50,
+                    "height": 50
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b51ac47f-5396-4a6d-96b2-227d06052460",
+            "label": "pg8",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d31036f2-9c12-4a8e-841e-de2c2b2f458d",
+                    "label": "nov24furnback",
+                    "texture": {
+                        "key": "nov24furn",
+                        "frame": "nov24furnback"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ec9a79b0-f8d3-4f73-b114-e6079f3f00b8",
+                    "label": "flip_42",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage7_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 524,
+                    "y": 741
+                },
+                {
+                    "type": "Image",
+                    "id": "99ecf698-0f2c-4e8d-a9e1-4cf2c41f4840",
+                    "label": "x_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "x",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "x"
+                    },
+                    "x": 524,
+                    "y": 192,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "cf38f46f-cf80-4584-94e7-c67ea2c1ec28",
+            "label": "pagex",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "x",
+            "Button.callback": "() => {this.scene.stop(); this.world.events.off(\"COINS_CHANGED\", this.handleUpdateCoins, this);}",
+            "texture": {
+                "key": "catalogs",
+                "frame": "x"
+            },
+            "x": 1318,
+            "y": 199,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "6b0a3ace-26bd-4114-983f-a6c7215a01ea",
+            "label": "wallet",
+            "scope": "CLASS",
+            "x": 21,
+            "y": 40,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "487cb500-e2c0-45fa-99fb-12d419fee0b6",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "x": 1132,
+                    "y": 872,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "YOUR COINS: 999999",
+                    "align": "center",
+                    "fontFamily": "CCFaceFront",
+                    "fontSize": "32px",
+                    "fontStyle": "bold italic",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 12
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

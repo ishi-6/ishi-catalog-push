@@ -1,0 +1,82 @@
+{
+	"textures": [
+		{
+			"image": "nov24igloo.webp",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1931,
+				"h": 1618
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "nov24igloop1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 962
+					},
+					"spriteSourceSize": {
+						"x": 124,
+						"y": 83,
+						"w": 1284,
+						"h": 812
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 1284,
+						"h": 812
+					}
+				},
+				{
+					"filename": "nov24iglooback",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 437,
+						"y": 76,
+						"w": 647,
+						"h": 809
+					},
+					"frame": {
+						"x": 1284,
+						"y": 0,
+						"w": 647,
+						"h": 809
+					}
+				},
+				{
+					"filename": "nov24igloocover",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1520,
+						"h": 960
+					},
+					"spriteSourceSize": {
+						"x": 441,
+						"y": 82,
+						"w": 647,
+						"h": 809
+					},
+					"frame": {
+						"x": 1284,
+						"y": 809,
+						"w": 647,
+						"h": 809
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7"
+	}
+}

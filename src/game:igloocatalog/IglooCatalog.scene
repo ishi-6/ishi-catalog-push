@@ -1,0 +1,1933 @@
+{
+    "id": "a5898349-c2fb-4397-9f58-2348f8556e16",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/static/assets/media/interface/game/igloo/igloo-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "IglooCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "3b94f863-439e-4252-bf24-05bfe3138e26",
+            "label": "block_3",
+            "components": [
+                "Interactive"
+            ],
+            "x": 4,
+            "y": 2,
+            "originX": 0,
+            "originY": 0,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "e7f4309b-a984-4310-97e7-fa44221c90ac",
+            "label": "pg1",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "546ed037-ec32-4074-b329-1b0b8c8c747c",
+                    "label": "pg_1",
+                    "texture": {
+                        "key": "nov24igloo",
+                        "frame": "nov24igloocover"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "8ae29552-f152-444f-9d26-f08323018701",
+                    "label": "x_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "x",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "x"
+                    },
+                    "x": 1001,
+                    "y": 198
+                },
+                {
+                    "type": "Image",
+                    "id": "ce79bb81-8cdf-475a-b736-e8d46334a4d0",
+                    "label": "flip",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage2Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1002,
+                    "y": 747,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2fa1325b-03ce-4d6b-ae89-8f97dfcd7170",
+            "label": "pg2",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "80543314-1d0c-4089-9f92-4487ed72b6a5",
+                    "label": "pg_3",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Undersea"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "90cfcce4-5cd5-4471-ac67-d44dba6bb4e1",
+                    "label": "flip_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "fcb92be0-4f7c-430c-b419-80ae7c50f371",
+                    "label": "flip_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage3Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "9be4d4b2-3793-4508-906b-5f8ac695e9ae",
+                    "label": "buy",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showLocation(8) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 453,
+                    "y": 738
+                },
+                {
+                    "type": "Image",
+                    "id": "e5f54cc5-c801-4379-b411-81a298a629e6",
+                    "label": "coin1",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 495,
+                    "y": 737,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Text",
+                    "id": "d9db8ce4-6bd8-427e-821b-641ae20e65e6",
+                    "label": "text1",
+                    "x": 414,
+                    "y": 723,
+                    "text": "3000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cee22719-6802-4e9c-b2c6-09f3de726e5c",
+            "label": "pg3",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "848762d8-dba8-4e57-b92e-77ab0fa4ffd9",
+                    "label": "pg_5",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Mountain"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "a4f70a70-6832-4656-bd51-8502643b052e",
+                    "label": "flip_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage2_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "64dff118-91d4-48d7-877f-8f06b9d471d0",
+                    "label": "flip_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage4Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "fc09d340-c85e-4c6a-8c39-603df1f485bf",
+                    "label": "buy_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showLocation(4) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 453,
+                    "y": 738
+                },
+                {
+                    "type": "Text",
+                    "id": "6b992360-6efd-42be-9768-78df0ff4a92a",
+                    "label": "text_1",
+                    "x": 414,
+                    "y": 723,
+                    "text": "3000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "9a9b6449-7ac0-4375-b3e1-1dc68993b754",
+                    "label": "coin_1",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 495,
+                    "y": 737,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b7e7969d-45e0-4bbb-a37d-8b28daf1e96d",
+            "label": "pg4",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9b74ffd0-e871-444b-b457-45f340369fa4",
+                    "label": "pg_7",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Beach"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "9caf20c1-17d2-4c35-ac8c-c35fa8e2b091",
+                    "label": "flip_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage3_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "b395569a-2c08-4146-8e47-ea366f58e6f7",
+                    "label": "flip_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage5Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "fe7913e8-ae94-4076-bb17-ab2cb6222493",
+                    "label": "buy_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showLocation(2) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 452,
+                    "y": 738
+                },
+                {
+                    "type": "Image",
+                    "id": "a81ee31e-f6c6-4a95-ac66-0571befa78d2",
+                    "label": "coin_2",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 494,
+                    "y": 737,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Text",
+                    "id": "d7bca585-5d04-45fb-b817-5e1f8001c338",
+                    "label": "text_2",
+                    "x": 413,
+                    "y": 723,
+                    "text": "3000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "da0a8efb-52c7-492e-8687-0367b48fb85b",
+            "label": "pg5",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "79f0c493-a400-49a7-8395-e8510e6c0fde",
+                    "label": "pg_71",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Forest"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "17675f28-b58e-4fde-935f-7779371a5eac",
+                    "label": "flip_61",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage4_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "7a4e75be-d0a5-4bd6-bd52-d738090d4f77",
+                    "label": "flip_71",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage6Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "1e1b7383-548f-4942-b3a5-d7b85a7cc668",
+                    "label": "secret_11",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretLocation(11); }",
+                    "x": 465,
+                    "y": 293,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "fc223972-5cb0-4da9-adbb-8510a7750d9a",
+                    "label": "buy_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showLocation(3) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 452,
+                    "y": 738
+                },
+                {
+                    "type": "Image",
+                    "id": "5d80c50c-0221-4448-bd15-376cfac38c1a",
+                    "label": "coin_3",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 494,
+                    "y": 737,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Text",
+                    "id": "8bff3f38-82d6-4230-9ec2-40675c94e60a",
+                    "label": "text_3",
+                    "x": 413,
+                    "y": 723,
+                    "text": "3000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c096b9dc-2849-4881-9927-f84d69868188",
+            "label": "pg6",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "37cb8c40-bbee-4965-97a6-42bb397d3784",
+                    "label": "pg_4",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Flooring1"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "daae0ea9-0b49-4d9e-ae0a-558c406a3501",
+                    "label": "flip_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage5_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "61cf1d3b-8cf9-4afb-a54a-032b4f5fad5b",
+                    "label": "flip_9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage7Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "a0ceb27d-8cc9-4ecf-9ea5-142acf1a4e63",
+                    "label": "buy_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(12) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1208,
+                    "y": 730
+                },
+                {
+                    "type": "Image",
+                    "id": "8d52de88-1ccb-443c-b339-11c49b0f9b0c",
+                    "label": "coin_8",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1255,
+                    "y": 730
+                },
+                {
+                    "type": "Text",
+                    "id": "fe823494-378a-4b7d-b593-230b97b40ec7",
+                    "label": "text_8",
+                    "x": 1177,
+                    "y": 715,
+                    "text": "750",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "a63eb2b1-2b2c-4b17-8e6f-dd3551a6fa58",
+                    "label": "buy_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(11) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1208,
+                    "y": 499
+                },
+                {
+                    "type": "Image",
+                    "id": "68806e12-cf81-464a-b56c-d34ad44beb2c",
+                    "label": "coin_7",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1252,
+                    "y": 499
+                },
+                {
+                    "type": "Text",
+                    "id": "2b7ec553-9c30-4910-96ac-87b7a7622512",
+                    "label": "text_7",
+                    "x": 1174,
+                    "y": 484,
+                    "text": "530",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "fdf5bb71-9c6a-4b2b-96b5-e741bd0b3a65",
+                    "label": "buy_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFurniture(607) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1208,
+                    "y": 252
+                },
+                {
+                    "type": "Image",
+                    "id": "549c8dda-99fd-4adf-9e4d-37ae4964e77e",
+                    "label": "coin_6",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1247,
+                    "y": 253
+                },
+                {
+                    "type": "Text",
+                    "id": "ad077794-6aec-4c6a-a2e8-7ae186e372bb",
+                    "label": "text_6",
+                    "x": 1176,
+                    "y": 238,
+                    "text": "50",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "2d09ae81-41e8-4df3-a275-5f1204f6aa11",
+                    "label": "buy_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(23) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 568,
+                    "y": 690
+                },
+                {
+                    "type": "Image",
+                    "id": "6683b4c1-ead1-4e9a-bc4e-94fb1523f3d4",
+                    "label": "coin_5",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 613,
+                    "y": 689
+                },
+                {
+                    "type": "Text",
+                    "id": "8296cc37-8b40-44da-8033-83f6c39740c4",
+                    "label": "text_5",
+                    "x": 540,
+                    "y": 674,
+                    "text": "750",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "ce9c603e-23e6-422a-b2e1-6299ec7f9f70",
+                    "label": "buy_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(16) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 571,
+                    "y": 388
+                },
+                {
+                    "type": "Image",
+                    "id": "67a786e1-3e08-4c39-bb7b-9c5bbf8726e2",
+                    "label": "coin_4",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 616,
+                    "y": 388
+                },
+                {
+                    "type": "Text",
+                    "id": "d98ca863-3df3-4cd7-87d8-5ac176a537df",
+                    "label": "text_4",
+                    "x": 542,
+                    "y": 373,
+                    "text": "800",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "916cc008-10fe-4753-beb3-ef01451b85d2",
+            "label": "pg7",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1b02598b-a99b-48a3-9c55-64efcb9165dd",
+                    "label": "pg_41",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Flooring2"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "4f9f9eb8-40ad-4ab5-9a8e-b947b1099743",
+                    "label": "flip_81",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage6_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "0798cf56-69c9-4be1-bd87-403311afaec7",
+                    "label": "flip_91",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage8Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "7c68f736-7798-4378-bee3-280304a3d755",
+                    "label": "buy_13",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(7) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1178,
+                    "y": 665
+                },
+                {
+                    "type": "Image",
+                    "id": "bfb21cf9-35b3-4af3-9555-4b7e063fa8a2",
+                    "label": "coin_13",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1233,
+                    "y": 664
+                },
+                {
+                    "type": "Text",
+                    "id": "c1cc011f-8061-4821-bd04-2eeed154d490",
+                    "label": "text_13",
+                    "x": 1146,
+                    "y": 650,
+                    "text": "1000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "6aad271d-cc54-459d-b632-22a25c36d355",
+                    "label": "buy_12",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(10) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1176,
+                    "y": 361
+                },
+                {
+                    "type": "Image",
+                    "id": "3c1a484d-b476-4488-aed5-6c1e8957fa9a",
+                    "label": "coin_12",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1228,
+                    "y": 360
+                },
+                {
+                    "type": "Text",
+                    "id": "00d64eb6-9442-4d74-85e4-9cd966c29ed5",
+                    "label": "text_12",
+                    "x": 1143,
+                    "y": 347,
+                    "text": "400",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "3b41a928-7e1b-4c67-9d1d-bcaa31b5b690",
+                    "label": "buy_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(13) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 567,
+                    "y": 741
+                },
+                {
+                    "type": "Image",
+                    "id": "47868415-3a90-4e1d-a00d-e321dfe96487",
+                    "label": "coin_11",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 620,
+                    "y": 740
+                },
+                {
+                    "type": "Text",
+                    "id": "a871a91b-837d-4b5d-953b-82e5bf8b71cf",
+                    "label": "text_11",
+                    "x": 536,
+                    "y": 727,
+                    "text": "620",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "a642247d-b3aa-4e35-954f-611b889a798b",
+                    "label": "buy_10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(2) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 560,
+                    "y": 509
+                },
+                {
+                    "type": "Image",
+                    "id": "4b86a49b-4038-42e2-9838-35d01fb922fa",
+                    "label": "coin_10",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 607,
+                    "y": 510
+                },
+                {
+                    "type": "Text",
+                    "id": "2d71c99b-6d1e-44b8-a8d4-635f83b10820",
+                    "label": "text_10",
+                    "x": 531,
+                    "y": 495,
+                    "text": "620",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "67ab3d83-31c7-4d1a-915b-2d6b1c5e25de",
+                    "label": "buy_9",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(4) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 559,
+                    "y": 279
+                },
+                {
+                    "type": "Image",
+                    "id": "cc5d1f1a-752b-4567-ae76-eeee82e0b455",
+                    "label": "coin_9",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 612,
+                    "y": 279
+                },
+                {
+                    "type": "Text",
+                    "id": "8bdafe2b-a10f-4218-9668-d0e43a339112",
+                    "label": "text_9",
+                    "x": 531,
+                    "y": 264,
+                    "text": "530",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "529eac9c-a27a-41af-9975-b28a16196efa",
+            "label": "pg8",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "362e9842-0e08-4e01-a0e4-1e62fa394f06",
+                    "label": "pg_6",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "Flooring3"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "618f40cc-5b7e-4c58-93c7-6d2aea8af0d6",
+                    "label": "flip_10",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage7_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "f5a2bc96-d953-48e0-93ef-4ecfa5de5302",
+                    "label": "flip_11",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage9Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "4133805d-6e33-47a5-ac30-46fba5d343eb",
+                    "label": "buy_17",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(0) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 957,
+                    "y": 368
+                },
+                {
+                    "type": "Text",
+                    "id": "1c1600d0-a14e-42f4-9b42-2008522dab8e",
+                    "label": "text_17",
+                    "x": 931,
+                    "y": 355,
+                    "text": "20",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "e092c80f-f0c3-43c8-90bc-2b85fc8e3d12",
+                    "label": "coin_17",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 998,
+                    "y": 370
+                },
+                {
+                    "type": "Image",
+                    "id": "f74e385d-664a-473e-9bf0-2ce540777f1d",
+                    "label": "buy_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(18) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 574,
+                    "y": 739
+                },
+                {
+                    "type": "Text",
+                    "id": "b2c1097e-9e29-4bdc-9e9d-0bb81bebdc30",
+                    "label": "text_16",
+                    "x": 537,
+                    "y": 725,
+                    "text": "400",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "62d998ca-3470-496b-8e81-5653f5901848",
+                    "label": "coin_16",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 609,
+                    "y": 738
+                },
+                {
+                    "type": "Image",
+                    "id": "cfe72ba0-7dba-41d8-809c-74ed3a251ea0",
+                    "label": "buy_15",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(8) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 568,
+                    "y": 501
+                },
+                {
+                    "type": "Text",
+                    "id": "2e57cf51-0d20-4f69-955c-233a2a943f2b",
+                    "label": "text_15",
+                    "x": 527,
+                    "y": 487,
+                    "text": "280",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "8b75ffeb-d14d-4d88-ae12-2ea670e47614",
+                    "label": "coin_15",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 601,
+                    "y": 502
+                },
+                {
+                    "type": "Image",
+                    "id": "9956f79c-fc4c-4f10-8cfd-6d71e21e1433",
+                    "label": "buy_14",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showFloor(15) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 576,
+                    "y": 271
+                },
+                {
+                    "type": "Text",
+                    "id": "a87e958b-1f69-4834-b842-da8a1aecc2b9",
+                    "label": "text_14",
+                    "x": 539,
+                    "y": 257,
+                    "text": "530",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "3413e65a-a753-48ab-ac06-a00c0bd8e809",
+                    "label": "coin_14",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 613,
+                    "y": 271
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "eec1276a-47e4-4f52-aae3-3845a4dd00de",
+            "label": "pg9",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "0e6f4870-bf93-47a4-822b-e8a9a2b9bb75",
+                    "label": "pg_10",
+                    "texture": {
+                        "key": "nov24igloo",
+                        "frame": "nov24igloop1"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d2dbf396-9140-42c1-829c-e11ba985b48c",
+                    "label": "flip_14",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage8_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "4551139c-15c6-4695-8231-21c8c2bca893",
+                    "label": "flip_15",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage10Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "0ae9f387-4979-4c05-954a-bc7b17359d08",
+                    "label": "buy_20",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(36) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 439,
+                    "y": 760
+                },
+                {
+                    "type": "Text",
+                    "id": "90fe3605-d665-4557-9e00-b3035103b8b7",
+                    "label": "text_20",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 36,
+                    "x": 402,
+                    "y": 745,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "aae7200a-ecd4-4290-8fd2-3e860f4ada21",
+                    "label": "coin_20",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 494,
+                    "y": 761,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Image",
+                    "id": "3613dad2-8fa1-40b3-8935-74a62329a9fe",
+                    "label": "buy_21",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(30) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1081,
+                    "y": 760
+                },
+                {
+                    "type": "Text",
+                    "id": "c651c19e-5aed-4fe8-8d52-5d515332faa0",
+                    "label": "text_21",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 30,
+                    "x": 1044,
+                    "y": 745,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "dc7646d6-72d7-4f62-a396-47f6e16bdc39",
+                    "label": "coin_21",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1130,
+                    "y": 761,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "936eb37e-6e3e-4687-9546-62a4f07d2a46",
+            "label": "pg10",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "5c337075-e3c0-48af-8f8e-5f290f20ba93",
+                    "label": "pg_11",
+                    "texture": {
+                        "key": "oct24igloo",
+                        "frame": "oct24igloop1"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "01983c86-f3b2-4360-a027-f22e67dda515",
+                    "label": "flip_140",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage9_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "7e4d4795-12b7-4480-b9eb-555a939740ac",
+                    "label": "flip_100",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage11Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "0bdde3d7-d44a-4161-b226-088d3d077f23",
+                    "label": "buy_22",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(42) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 425,
+                    "y": 749
+                },
+                {
+                    "type": "Text",
+                    "id": "9a85122b-3ae5-477d-928b-e899579d74bc",
+                    "label": "text_22",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 42,
+                    "x": 384,
+                    "y": 735,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "b2d04811-e3ba-486b-b8d6-a0d08b5cc034",
+                    "label": "coin_22",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 470,
+                    "y": 748,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Image",
+                    "id": "35af03d9-3d95-4e79-ab95-cbd3708e0cb2",
+                    "label": "buy_23",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(20) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1081,
+                    "y": 749
+                },
+                {
+                    "type": "Text",
+                    "id": "093040c6-131c-4763-bde5-22f236a5f0b3",
+                    "label": "text_23",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 31,
+                    "x": 1039,
+                    "y": 736,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "4e555932-ae71-439f-a608-f47adc815257",
+                    "label": "coin_23",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1128,
+                    "y": 749,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "3c1a4ba7-8d35-4a96-8de1-fbafc9a08d43",
+                    "label": "secret_2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretIgloo(66); }",
+                    "x": 1074,
+                    "y": 403,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 10,
+                    "height": 10
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "50e87145-4a9f-4735-bc3b-010c3277f5e6",
+            "label": "pg11",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "926dab3b-54f2-4f9a-a5e7-c8a6bd016bc9",
+                    "label": "pg_14",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "BlueIgloos"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "7afd99c9-f326-4515-9205-b7c16e515602",
+                    "label": "flip_18",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage10_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "0dd0434f-e91f-41ca-991d-18f3fd46d30f",
+                    "label": "flip_19",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage12Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "7109e892-de73-41f9-8190-223414284d92",
+                    "label": "buy_25",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(3) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1081,
+                    "y": 749
+                },
+                {
+                    "type": "Text",
+                    "id": "ad17d676-4c7c-4fa2-877c-8121685b6b68",
+                    "label": "text_25",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 3,
+                    "x": 1041,
+                    "y": 736,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "c12abee0-c440-4f1e-87f5-080b59939e6b",
+                    "label": "coin_25",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1127,
+                    "y": 749,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Image",
+                    "id": "73eb1aba-3476-4845-a89a-1e09c12260ef",
+                    "label": "buy_24",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(13) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 422,
+                    "y": 749
+                },
+                {
+                    "type": "Text",
+                    "id": "d1928cec-af24-4d00-96f0-1c94a6c05110",
+                    "label": "text_24",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 13,
+                    "x": 386,
+                    "y": 735,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "78c6cbfb-e112-4400-96da-7e111190444a",
+                    "label": "coin_24",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 3,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 474,
+                    "y": 748,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "311b6820-65f3-4103-b990-ce1bdee972dd",
+                    "label": "secret_3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.interface.prompt.showSecretIgloo(8); }",
+                    "x": 1230,
+                    "y": 359,
+                    "scaleX": 0.2842551982262872,
+                    "scaleY": 0.30577828818816355,
+                    "fillColor": "#0cc8ff",
+                    "fillAlpha": 100,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "fa5e494d-27aa-4f7f-99a6-7add651c84fa",
+            "label": "pg12",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "82025c02-2362-490a-acfc-0a8c27be477e",
+                    "label": "pg_32",
+                    "texture": {
+                        "key": "igloo",
+                        "frame": "BasicIgloo"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d4312131-53df-4738-84b5-415a102e96fb",
+                    "label": "flip_46",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage11_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 201,
+                    "y": 747
+                },
+                {
+                    "type": "Image",
+                    "id": "60b89cd0-bbc5-4077-b0bf-e4aa9e561bfd",
+                    "label": "flip_47",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage13Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 1318,
+                    "y": 747,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "47c55ebc-2ee3-4bc3-a996-d50a22673442",
+                    "label": "buy_27",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(100) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 1080,
+                    "y": 749
+                },
+                {
+                    "type": "Image",
+                    "id": "c970d35c-ed21-447c-aacb-28249d6345a5",
+                    "label": "coin_27",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 3,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 1123,
+                    "y": 747,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Text",
+                    "id": "d68856f5-102f-48aa-91ab-a63df1aede3a",
+                    "label": "text_27",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 100,
+                    "x": 1041,
+                    "y": 734,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                },
+                {
+                    "type": "Image",
+                    "id": "d75ab4ee-44e8-402a-8c96-3821dba4e7bb",
+                    "label": "buy_26",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => { this.interface.prompt.showIgloo(1) }",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "buy"
+                    },
+                    "x": 422,
+                    "y": 749
+                },
+                {
+                    "type": "Image",
+                    "id": "7067834a-3a00-4264-a7ac-ccf96cb37bef",
+                    "label": "coin_26",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 3,
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "coin"
+                    },
+                    "x": 469,
+                    "y": 747,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9
+                },
+                {
+                    "type": "Text",
+                    "id": "7b046384-7803-4eb9-b7bb-75c4915d68ca",
+                    "label": "text_26",
+                    "components": [
+                        "IglooBuy"
+                    ],
+                    "IglooBuy.id": 1,
+                    "x": 392,
+                    "y": 734,
+                    "text": "0",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#683200"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c711952c-6cc6-406c-a581-a244e8d4af39",
+            "label": "pg13",
+            "scope": "CLASS",
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f52567cc-1df8-4182-b68e-0932147b86c7",
+                    "label": "nov24iglooback",
+                    "texture": {
+                        "key": "nov24igloo",
+                        "frame": "nov24iglooback"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "36f5e343-6946-4420-8ec9-3eb4da3b9064",
+                    "label": "flip_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "flip",
+                    "Button.callback": "() => this.onPage12_1Click()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "flip"
+                    },
+                    "x": 523,
+                    "y": 740
+                },
+                {
+                    "type": "Image",
+                    "id": "d9de469a-a37e-4952-85a0-064507d4a5b6",
+                    "label": "x_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "x",
+                    "Button.callback": "() => this.scene.stop()",
+                    "texture": {
+                        "key": "catalogs",
+                        "frame": "x"
+                    },
+                    "x": 523,
+                    "y": 192,
+                    "flipX": true
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "e5683069-fe6b-46d0-b90e-72158eaf0d9d",
+            "label": "pagex",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "x",
+            "Button.callback": "() => {this.scene.stop(); this.world.events.off(\"COINS_CHANGED\", this.handleUpdateCoins, this);}",
+            "texture": {
+                "key": "catalogs",
+                "frame": "x"
+            },
+            "x": 1318,
+            "y": 199,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "4192328c-0bdb-4f7a-bca2-a4309624d8ac",
+            "label": "wallet",
+            "scope": "CLASS",
+            "y": 37,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "d343ead3-90bf-481d-9dce-01d15c193721",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "x": 1132,
+                    "y": 872,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "YOUR COINS: 999999",
+                    "align": "center",
+                    "fontFamily": "CCFaceFront",
+                    "fontSize": "32px",
+                    "fontStyle": "bold italic",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 12
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 4
+    }
+}

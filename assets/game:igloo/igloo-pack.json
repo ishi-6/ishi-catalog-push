@@ -1,0 +1,68 @@
+{
+    "section1": {
+        "files": [
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/apr24igloo.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "apr24igloo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/igloo.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "igloo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/iglooaug24.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "iglooaug24"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/igloomay24.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "igloomay24"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/june24igloo.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "june24igloo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/march24igloo.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "march24igloo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/oct24igloo.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "oct24igloo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/media/interface/game/igloo/nov24igloo.json",
+                "path": "assets/media/interface/game/igloo",
+                "key": "nov24igloo"
+            },
+            {
+                "url": [
+                    "assets/media/sounds/secret_igloo.mp3"
+                ],
+                "type": "audio",
+                "key": "secret_igloo"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
